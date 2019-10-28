@@ -1,14 +1,22 @@
 import React from "react";
 import { render } from "react-dom";
-import MyComponent from "../../lib";
 import "./styles.css";
+import Tabs from "../../components/tabs"
+import Tab from "../../components/tabs"
 
 function Demo() {
   return (
-    <div>
-      <h1>Demo with examples of the component</h1>
-      <MyComponent color="brown">Wow what a button</MyComponent>
-    </div>
+    <Tabs tabActive={2}>
+      <Tab title='Tab #1'>
+        <h2>Content #1</h2>
+      </Tab>
+      <Tab title='Tab #2'>
+        <h2>Content #2</h2>
+      </Tab>
+      <Tab title='Tab #3'>
+        <h2>Content #3</h2>
+      </Tab>
+    </Tabs>
   );
 }
 

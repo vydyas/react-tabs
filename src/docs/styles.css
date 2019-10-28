@@ -1,4 +1,87 @@
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,700");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a { text-decoration: none; }
+
 body {
-  background: #eee;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.title {
+  padding: 50px;
+  padding-bottom: 100px;
+  margin: 0;
+  background: #f2f2f2;
+  font-size: 48px;
+  font-weight: 200;
+  color: #919191;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.9);
+}
+
+/* =============================================================================
+  An example of how stylize the tabs
+============================================================================= */
+
+
+.tabs-navigation {
+  padding: 0 50px;
+}
+
+.tabs-panel {
+  padding: 50px;
+}
+
+
+/*!
+ * 
+ *  React Simpletabs - Just a simple tabs component built with React
+ *  @version v0.1.0
+ *  @link https://github.com/pedronauck/react-simpletabs
+ *  @license MIT
+ *  @author Pedro Nauck (https://github.com/pedronauck)
+ * 
+ */
+ .tabs-navigation {
+  padding: 0 20px;
+  max-height: 50px;
+  border-bottom: 1px solid #ddd;
+}
+.tabs-menu {
+  display: table;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.tabs-menu-item {
+  float: left;
+}
+.tabs-menu-item a {
+  display: block;
+  padding: 0 40px;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 0;
+  color: #a9a9a9;
+}
+.tabs-menu-item:not(.is-active) a:hover {
+  color: #3498db;
+}
+.tabs-menu-item.is-active a {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-top: 2px solid #3498db;
+  border-bottom: 0;
+  color: #333;
+}
+.tabs-panel {
+  display: none;
+  padding: 30px;
+}
+.tabs-panel.is-active {
+  display: block;
 }
