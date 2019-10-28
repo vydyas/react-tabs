@@ -1,12 +1,12 @@
 import React from "react";
 import { render } from "react-dom";
 import "./styles.css";
-import Tabs from "../../components/tabs"
-import Tab from "../../components/tabs"
+import Tabs from "../../lib/Tabs"
+import Tab from "../../lib/Tab"
 
 function Demo() {
   return (
-    <Tabs tabActive={2}>
+    <Tabs tabActive={1}>
       <Tab title='Tab #1'>
         <h2>Content #1</h2>
       </Tab>
